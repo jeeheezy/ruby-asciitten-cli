@@ -29,7 +29,7 @@ class Asciitten
       outline = "+#{outline_width}+"
       output = "| #{@text} |" 
     end
-    puts "
+    return "
 #{outline}
 #{output}
 #{outline}
