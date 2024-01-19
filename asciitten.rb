@@ -12,7 +12,7 @@ class Asciitten
       split_text.map! {|string|
         string.strip
       }
-      max_characters = split_text.max.length
+      max_characters = (split_text.max { |a, b| a.length <=> b.length}).length
       outline_width = "-" * (max_characters + 2)
       outline = "+#{outline_width}+"
       output = ""
